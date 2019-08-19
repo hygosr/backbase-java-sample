@@ -1,3 +1,3 @@
 FROM tomcat:9-jdk11-openjdk-slim
 
-ADD sample.war ${CATALINA_BASE}/webapps/sample.war 
+COPY sample.war /usr/local/tomcat/webapps/sample.war 
