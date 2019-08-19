@@ -2,19 +2,16 @@ pipeline {
     agent any
 
     stages {
-        stage('Build') {
+        stage('build') {
             steps {
-                echo 'Building..'
+                echo 'Building Backbase docker image...'
+                sh 'docker build -t backbase-java-sample:latest .'
             }
         }
-        stage('Test') {
+        stage('push') {
             steps {
-                echo 'Testing..'
-            }
-        }
-        stage('Deploy') {
-            steps {
-                echo 'Deploying....'
+                echo 'Pushing Backbase docker image to registry...'
+                echo 'docker push -t backbase-java-sample:latest'
             }
         }
     }
