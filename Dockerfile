@@ -1,3 +1,3 @@
-FROM jenkins/jenkins:latest
+FROM tomcat:9-jdk11-openjdk-slim
 
-RUN echo "testing"
+ADD sample.war ${CATALINA_BASE}/webapps/sample.war 

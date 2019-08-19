@@ -1,7 +1,10 @@
 # Backbase Java Sample
+Java Sample code used for backbase exercise (https://tomcat.apache.org/tomcat-8.0-doc/appdev/sample/)
 
-Java Sample code used for backbase exercise
+# Files description
 
-# Jenkinsfile
-
-Pipeline Defining the Jenkins build steps
+| File               | Description                                                              |
+| ------------------ | ------------------------------------------------------------------------ |
+| `Jenkinsfile`      | Jenkins Pipeline Configuration                                           |
+| `Dockerfile`       | Dockerfile used during pipeline for building sample.war app              |
+| `sample.war`       | Java Demo app (https://tomcat.apache.org/tomcat-8.0-doc/appdev/sample/)  |
